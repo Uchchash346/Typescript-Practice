@@ -1,18 +1,6 @@
-let a: any;
-a = 5;
-a = "Uchchash"
-
-let b: any[] = [];
-b.push("Bangladesh")
-b.push(55);
-
-// object
-let c: {
-    name: any,
-    age: any
+const myFunc = (a: string, b: string, c?: string = "True") => {
+    console.log(c)
+    console.log(`Hello ${a} ${b}`);
 };
 
-c = {
-    name: "Bangladesh",
-    age: 45
-}
+myFunc("A", "B", "false")
