@@ -1,16 +1,26 @@
-// array 
-// let mixed = ["apple", 3, true, {}];
+// let a: string;
+// let b: number;
+// a = "sumit";
+// b = 34
 
-// mixed.push({
-//     name: "Mahmudullah", 
-// })
+// normal variable 
+let c: string | number;
 
+// array
+let a: (string | number)[] = [];
+a.push("Uchchash", 22)
+
+c = "Mahmudur Rahman"
 
 // object
-let person = {
-    name: "Mashrafi",
-    age: 22,
-    isCaptained: true,
+let d: {
+    name: string,
+    age: number,
+    adult: boolean,
 };
 
-person.name = ""
+d = {
+    name: "Uchchash346",
+    age: 34,
+    adult: true,
+}
