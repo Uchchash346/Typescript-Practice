@@ -1,7 +1,7 @@
 "use strict";
-var myFunc = function (a, b, c) {
-    if (c === void 0) { c = "True"; }
-    console.log(c);
-    console.log("Hello " + a + " " + b);
+var userDetails = function (id, user) {
+    console.log("User id is " + id + ", name is " + user.name + " and age is " + user.age);
 };
-myFunc("A", "B", "false");
+var sayHello = function (user) {
+    console.log("Hello " + (user.age > 50 ? "Sir" : "Mr.") + " " + user.name);
+};

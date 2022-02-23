@@ -1,6 +1,11 @@
-const myFunc = (a: string, b: string, c?: string = "True") => {
-    console.log(c)
-    console.log(`Hello ${a} ${b}`);
+type stringOrNum = string | number;
+type userType = { name: string; age: number };
+
+const userDetails = (id: stringOrNum, user: userType) => {
+    console.log(`User id is ${id}, name is ${user.name} and age is ${user.age}`);
 };
 
-myFunc("A", "B", "false")
+
+const sayHello = (user: userType) => {
+    console.log(`Hello ${user.age > 50 ? "Sir" : "Mr."} ${user.name}`);
+}
