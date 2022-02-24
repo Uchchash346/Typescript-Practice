@@ -1,17 +1,22 @@
-// let add: (x: number, y: number) => number;
+class Player {
+    name: string;
+    age: number;
+    country: string;
 
-// add = (a: number, b: number) => {
-//     return a + b;
-// }
-
-let calculation: (x: number, y: number, z: string) => number;
-
-calculation = (a: number, b: number, c: string) => {
-    if (c == 'add') {
-        return a + b;
-    } else {
-        return a - b
+    constructor(n: string, a: number, c: string) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+    play() {
+        console.log(`${this.name} from ${this.country} is playing!`);
     }
 }
 
-console.log(calculation(5, 6, "minus"));
+const mashrafi = new Player('Mashrafi', 40, 'Bangladesh');
+const sakib = new Player('Sakib', 38, 'Bangladesh');
+console.log(mashrafi)
+const players: Player[] = [];
+
+players.push(sakib);
+players.push(mashrafi);

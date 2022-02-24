@@ -1,15 +1,18 @@
 "use strict";
-// let add: (x: number, y: number) => number;
-// add = (a: number, b: number) => {
-//     return a + b;
-// }
-var calculation;
-calculation = function (a, b, c) {
-    if (c == 'add') {
-        return a + b;
+var Player = /** @class */ (function () {
+    function Player(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
     }
-    else {
-        return a - b;
-    }
-};
-console.log(calculation(5, 6, "minus"));
+    Player.prototype.play = function () {
+        console.log(this.name + " from " + this.country + " is playing!");
+    };
+    return Player;
+}());
+var mashrafi = new Player('Mashrafi', 40, 'Bangladesh');
+var sakib = new Player('Sakib', 38, 'Bangladesh');
+console.log(mashrafi);
+var players = [];
+players.push(sakib);
+players.push(mashrafi);
